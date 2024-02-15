@@ -1,0 +1,269 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аренда манипуляторов</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="navbar">
+  <div class="header-title">Спец<span>Тех</span></div>
+  <div class="header-menu">
+    <a href="#services">Услуги</a>
+    <a href="#about">О нас</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contact-info">Контакты</a>
+  </div>
+  <div class="header-contacts">
+    <img src={% static "/images/2.png" %} alt="Phone">
+    +7(925)7778080
+    <img src={% static "/images/3.png" %} alt="Chat">
+    s7778080@list.ru
+  </div>
+</div>
+ {% if messages %}
+     {% for message in messages %}
+         <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            {{message|safe}}
+        </div>
+     {% endfor %}
+ {% endif %}
+<div class="main-header">
+  <div class="overlay"></div>
+  <div class="content" >
+    <h1>Аренда манипуляторов в <span>Москве и Подмосковье</span></h1>
+    <p>Ваш надежный партнер по аренде манипуляторов в Москве и Подмосковье. Обеспечиваем качественное обслуживание и гибкие условия для каждого клиента.</p>
+    <a href="#about" class="button white">Узнайте больше о нас</a>
+    <a href="#contact" class="button orange">Заказать звонок</a>
+  </div>
+</div>
+
+<section class="manipulators" id="services">
+  <h2>Наши манипуляторы</h2>
+  <p>Идеальный баланс мощности и надежности для ваших задач.</p>
+  <div class="manipulator-cards">
+    <div class="manipulator-card">
+      <img src={% static "/images/4.png" %} alt="Манипулятор 8т">
+      <p>Грузоподъемность: 8т</p>
+      <p>Грузоподъемность стрелы: 5т</p>
+      <p>Длина: 6.5м</p>
+      <p>Цена за смену(8ч.): от 16000р</p>
+      <a href="#contact" class="manipulator-button">Заказать</a>
+    </div>
+    <div class="manipulator-card">
+      <img src={% static "/images/5.png" %} alt="Манипулятор 10т">
+      <p>Грузоподъемность: 10т</p>
+      <p>Грузоподъемность стрелы: 7т</p>
+      <p>Длина: 6.2м</p>
+      <p>Цена за смену(8ч.): от 18000р</p>
+      <a href="#contact" class="manipulator-button">Заказать</a>
+    </div>
+    <div class="manipulator-card">
+      <img src={% static "images/6.png" %} alt="Манипулятор 12т">
+      <p>Грузоподъемность: 12т</p>
+      <p>Грузоподъемность стрелы: 8т</p>
+      <p>Длина: 6.5м</p>
+      <p>Цена за смену(8ч.): от 19000р</p>
+      <a href="#contact" class="manipulator-button">Заказать</a>
+    </div>
+  </div>
+</section>
+
+<section class="call-to-action" id="contact">
+  <h2>Закажи манипулятор уже сейчас</h2>
+  <p>Звони на номер </p>
+  <p>89257778080</p>
+</section>
+
+<div class="icons-section">
+  <div class="icon-item">
+    <img src={% static "images/7.png" %} alt="Icon 1">
+    <p>Мы на рынке уже более пяти лет</p> 
+  </div>
+  <!-- <img src="images/divider.png" alt="Divider" class="icon-divider"> -->
+  <div class="icon-item">
+    <img src={% static "images/8.png" %} alt="Icon 2">
+    <p>У нас есть пропуска в центры Москвы</p> 
+  </div>
+  <!-- <img src="images/divider.png" alt="Divider" class="icon-divider"> -->
+  <div class="icon-item">
+    <img src={% static "images/9.png" %} alt="Icon 3">
+    <p>Наш персонал профессионально обучен</p>
+  </div>
+  <!-- <img src="images/divider.png" alt="Divider" class="icon-divider"> -->
+  <div class="icon-item">
+    <img src={% static "/images/10.png" %} alt="Icon 4">
+    <p>Мы обрабатываем заявки в течение пару часов</p>
+  </div>
+</div>
+
+<section class="about-company" id="about">
+  <div class="container">
+    <div class="company-info">
+      <h1>Больше о компании</h1>
+      <p>Наша компания находится на рынке уже более пяти лет. С момента нашего основания мы сосредоточились на предоставлении безупречного сервиса, гарантируя, что каждый проект будет выполнен эффективно, безопасно и в срок. Наша миссия - предоставлять высококачественные и доступные решения для всех ваших потребностей в погрузке и транспортировке. Каждое наше транспортное средство управляется опытным водителем, обладающим глубокими знаниями и навыками для решения любых логистических задач.</p>
+      <p></p>
+      <p>Мы ценим каждого клиента и стремимся предложить индивидуальный подход. Независимо от размера или сложности вашего проекта, мы готовы предложить оптимальное решение, соответствующее вашим уникальным потребностям и бюджету. Обращаясь к нам, вы можете быть уверены в том, что ваш груз будет доставлен точно и безопасно. Мы работаем с самыми разными заказчиками, от частных лиц до крупных корпораций, и гордимся возможностью вносить свой вклад в успех каждого проекта.</p>
+      <p></p>
+      <p>Доверьте ваши задачи профессионалам. Мы - больше чем просто аренда манипуляторов, мы гарантия качества и надежности.</p>
+      <h2>Наши преимущества</h2>
+    </div>
+    <div class="company-advantages">
+      <div class="advantage-item">
+        <img src={% static "images/11.png" %} alt="Efficiency">
+        <h3>Эффективность</h3>
+        <p>Наши манипуляторы и команда быстро и эффективно справляются с задачами, обеспечивая оптимальные результаты.</p>
+      </div>
+      <img src={% static "divider.png" %} alt="Divider" class="icon-divider">
+      <div class="advantage-item">
+        <img src={% static "images/12.png" %} alt="Safety">
+        <h3>Безопасность</h3>
+        <p>Наши специалисты строго следуют всем стандартам, гарантируя надежность и безопасность выполнения каждой задачи.</p>
+      </div>
+      <img src={% static "divider.png" %} alt="Divider" class="icon-divider">
+      <div class="advantage-item">
+        <img src={% static "images/13.png" %} alt="Convenience">
+        <h3>Удобство</h3>
+        <p>Мы берем на себя все заботы, обеспечивая легкость и удобство на каждом этапе сотрудничества.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="customer-reviews" id="reviews">
+  <h2>Что говорят наши клиенты</h2>
+  <div class="reviews-container">
+    <div class="review">
+      <p class="review-date">Григорий, 25.10.2023</p>
+      <p class="review-content">Делал заказ на перевозку стройматериалов, остался доволен. Товар был доставлен вовремя, в ценности и сохранности. Буду обращаться и в дальнейшем. Спасибо Вам за качественно проделанную работу.</p>
+    </div>
+    <div class="review">
+    <p class="review-date">Дмитрий, 07.10.2023</p>
+      <p class="review-content">Заказали манипулятор для доставки и разгрузки строй-материалов для загородного дома - огромная экономия времени, мало того что мы все погрузили силами одной машины и так же произвели разгрузку, но по мимо этого водитель при помощи манипулятора помог нам поднять тяжелые материалы на второй этаж и по мелочи много чего сделали.</p>
+    </div>
+    <div class="review">
+  <p class="review-date">Ангелина, 30.09.2023</p>
+  <p class="review-content">Обращались в данную компанию для перевозки и посадки деревьев на даче. Все прошло быстро и самое главное качественно, на дачном участке у нас был ландшафтный дизайн и мы боялись что машины его попортят сажая деревья, но как не странно даже не было ничего задето. Мы осталось довольны услугами.</p>
+  </div>
+  <div class="review">
+  <p class="review-date">Алексей Лобня, 16.09.2023</p>
+  <p class="review-content">Делал заказ на перевозку стройматериалов, остался доволен. Товар был доставлен вовремя, в ценности и сохранности. Буду обращаться и в дальнейшем. Спасибо Вам за качественно проделанную работу.</p>
+  </div>
+  <div class="review">
+  <p class="review-date">Сергей, 19.08.2023</p>
+  <p class="review-content">Заказывал перевозку и посадку деревьев, произвели все быстро и аккуратно - рекомендую.</p>
+</div>
+  </div>
+</section>
+
+<section class="comment-submission">
+  <h2>Оставьте свой комментарий</h2>
+  <form action="/submit-comment" method="post">
+    <div class="input-row">
+      <div class="input-wrap">
+        <label for="name">Имя*</label>
+        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+      </div>
+      <div class="input-wrap">
+        <label for="email">Адрес электронной почты*</label>
+        <input type="email" id="email" name="email" placeholder="Ваш email" required>
+      </div>
+    </div>
+    <div class="input-wrap full-width">
+      <label for="comment">Ваш комментарий*</label>
+      <textarea id="comment" name="comment" placeholder="Ваш комментарий" required></textarea>
+    </div>
+    <div class="button-wrap">
+      <button type="submit">Опубликовать</button>
+    </div>
+  </form>
+</section>
+
+
+
+
+
+<section class="contact-section" id="contact-info">
+  <h1>Контакты</h1>
+  <div class="contact-container">
+    <div class="contact-details">
+      <h2>Компания</h2>
+      <p>Общество с ограниченной ответственностью «СпецТех»</p>
+      <p>г. Москва, ул. Авиамоторная, д. 44 стр. 2, этаж 4 помещ. 51</p>
+      <h2>Телефоны:</h2>
+      <p>+7 (925) 777 80 80</p>
+      <h2>E-mail:</h2>
+      <p>s7778080@list.ru</p>
+      <h2>Часы работы:</h2>
+      <p>07:00 - 23:00</p>
+    </div>
+    <div class="contact-form">
+      <h2>Форма связи</h2>
+      <form enctype="multipart/form-data" class="contact-form-form" method="POST">
+        {% csrf_token %}
+        <label for="name">Имя*</label>
+        <input type="text" id="id_name" name="name" required placeholder="Ваше имя">
+        <label for="phone">Номер телефона*</label>
+        <input type="text" id="id_phone_number" name="phone_number" required placeholder="Ваш номер телефона">
+        <label for="email">Электронная почта*</label>
+        <input type="email" id="id_email" name="email" required placeholder="Ваш email">
+        <label for="message">Сообщение*</label>
+        <textarea id="id_message" name="message" required placeholder="Ваше сообщение"></textarea>
+        <div class="button-wrap">
+          <button type="submit">Отправить запрос</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="stay-connected">
+      <h4>Давайте оставаться на связи</h4>
+      <p>Подпишитесь на нашу рассылку об акциях и новостях.</p>
+      <form class="newsletter" action="#" method="post">
+        <input type="email" placeholder="Ваш почтовый адрес" aria-label="Ваш почтовый адрес">
+        <button type="submit">Подписаться</button>
+      </form>
+    </div>
+    <div class="footer-brand">
+      Спец<span>Тех</span>
+      <p class="footer-bottom">&copy; 2023 DevM. All rights reserved.</p>
+    </div>
+    
+  </div>
+</footer>
+</body>
+
+<script>
+// Get all elements with class="closebtn"
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+// Loop through all close buttons
+for (i = 0; i < close.length; i++) {
+  // When someone clicks on a close button
+  close[i].onclick = function(){
+
+    // Get the parent of <span class="closebtn"> (<div class="alert">)
+    var div = this.parentElement;
+
+    // Set the opacity of div to 0 (transparent)
+    div.style.opacity = "0";
+
+    // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+</html>
